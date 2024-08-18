@@ -1,7 +1,6 @@
 <h1>How did the API Gateway experience a complete outage?</h1>
 <h2>Incident Summary</h2>
 <p>Impact: The API Gateway, a core component of our microservices architecture, experienced a complete outage. This resulted in a major downtime for our web application, impacting approximately 80% of our user base. Users reported experiencing slow load times, error messages, and intermittent service availability.</p>
-<img title="The API Gateway example" align="left" src="[Pictures\postm project](https://www.google.com/url?sa=i&url=https%3A%2F%2Fimesh.ai%2Fblog%2Fintroduction-to-api-gateway-in-microservices-architecture%2F&psig=AOvVaw1qF_rTYo15-Yz9lidHzZ8z&ust=1724066043825000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPDkxtK0_ocDFQAAAAAdAAAAABAE)"  width="500px" alt="hi" >
 <h2>Root Cause:</h2>
 <p>A combination of factors contributed to the outage. A misconfiguration of the API Gateway load balancer caused traffic to be distributed unevenly across the backend servers. This overload on certain servers led to resource exhaustion and eventual failure. Additionally, a recent code change introduced a bug that exacerbated the issue by increasing the load on the API Gateway.</p>
 <h2>Timeline</h2>
@@ -18,7 +17,6 @@
 <h2>Root Cause and Resolution</h2>
 <p>The root cause of the outage was a misconfiguration in the API Gateway load balancer that resulted in uneven traffic distribution. This overload on some of the backend servers led to resource exhaustion and failure. Additionally, a recent code change introduced a bug that increased the load on the API Gateway.</p>
 <p>To resolve the issue, we as a team corrected the load balancer configuration to ensure that traffic was distributed fairly. We also identified and fixed the bug in the code.</p>
-<img src="/figures-teamwork-brainstorming.jpg" alt="">
 <h2>Corrective and Preventive Measures</h2>
 <ul>
 <li>Review and Improve Monitoring: Enhance the monitoring system to provide more detailed insights into API Gateway performance and identify potential issues early.</li>
